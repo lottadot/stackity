@@ -33,19 +33,29 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Cg1-N4-8nh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4be-Ke-fOz"/>
+                            <constraint firstAttribute="trailing" secondItem="Cg1-N4-8nh" secondAttribute="trailing" constant="15" id="Cji-Kq-mbQ"/>
                             <constraint firstItem="Cg1-N4-8nh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="118" id="GyP-zI-fw5"/>
                             <constraint firstItem="d8t-UM-f5T" firstAttribute="top" secondItem="Cg1-N4-8nh" secondAttribute="bottom" constant="87.5" id="O06-fZ-vgj"/>
+                            <constraint firstAttribute="trailing" secondItem="d8t-UM-f5T" secondAttribute="trailing" constant="97.5" id="PBv-XB-4fk">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="Cg1-N4-8nh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QNU-R8-dhP"/>
+                            <constraint firstItem="Cg1-N4-8nh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="Xul-T5-dAy"/>
                             <constraint firstItem="d8t-UM-f5T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yq8-Ld-JqD"/>
+                            <constraint firstItem="d8t-UM-f5T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="npn-aY-AVY"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="d8t-UM-f5T"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Cji-Kq-mbQ"/>
                                 <exclude reference="GyP-zI-fw5"/>
+                                <exclude reference="Xul-T5-dAy"/>
                                 <exclude reference="O06-fZ-vgj"/>
+                                <exclude reference="PBv-XB-4fk"/>
                                 <exclude reference="Yq8-Ld-JqD"/>
+                                <exclude reference="npn-aY-AVY"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -53,10 +63,15 @@
                                 <include reference="d8t-UM-f5T"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="4be-Ke-fOz"/>
+                                <include reference="Cji-Kq-mbQ"/>
                                 <include reference="GyP-zI-fw5"/>
                                 <exclude reference="QNU-R8-dhP"/>
+                                <include reference="Xul-T5-dAy"/>
                                 <include reference="O06-fZ-vgj"/>
-                                <include reference="Yq8-Ld-JqD"/>
+                                <include reference="PBv-XB-4fk"/>
+                                <exclude reference="Yq8-Ld-JqD"/>
+                                <include reference="npn-aY-AVY"/>
                             </mask>
                         </variation>
                     </view>
