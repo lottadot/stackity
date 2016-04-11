@@ -23,15 +23,46 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some label for subheadline text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8t-UM-f5T">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Cg1-N4-8nh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4be-Ke-fOz"/>
+                            <constraint firstItem="Cg1-N4-8nh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="118" id="GyP-zI-fw5"/>
+                            <constraint firstItem="d8t-UM-f5T" firstAttribute="top" secondItem="Cg1-N4-8nh" secondAttribute="bottom" constant="87.5" id="O06-fZ-vgj"/>
                             <constraint firstItem="Cg1-N4-8nh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QNU-R8-dhP"/>
+                            <constraint firstItem="d8t-UM-f5T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yq8-Ld-JqD"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="d8t-UM-f5T"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="GyP-zI-fw5"/>
+                                <exclude reference="O06-fZ-vgj"/>
+                                <exclude reference="Yq8-Ld-JqD"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="d8t-UM-f5T"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="GyP-zI-fw5"/>
+                                <exclude reference="QNU-R8-dhP"/>
+                                <include reference="O06-fZ-vgj"/>
+                                <include reference="Yq8-Ld-JqD"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="headlineLabel" destination="Cg1-N4-8nh" id="kao-o4-Fs7"/>
+                        <outlet property="subheadLabel" destination="d8t-UM-f5T" id="2xq-mo-scV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
